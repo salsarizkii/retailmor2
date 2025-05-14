@@ -14,5 +14,26 @@
         "postcss": "^8.5.3",
         "tailwindcss": "^4.1.6",
         "vite": "^6.0.11"
+    },
+    "name": "retailmor2",
+    "version": "1.0.0",
+    "description": "<p align=\"center\"><a href=\"https://laravel.com\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg\" width=\"400\" alt=\"Laravel Logo\"></a></p>",
+    "main": "vite.config.js",
+    "directories": {
+        "test": "tests"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/salsarizkii/retailmor2.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/salsarizkii/retailmor2/issues"
+    },
+    "homepage": "https://github.com/salsarizkii/retailmor2#readme",
+    "dependencies": {
+        "@tailwindcss/cli": "^4.1.6"
     }
 }

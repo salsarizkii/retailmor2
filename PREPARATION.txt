@@ -1,0 +1,80 @@
+# Retailmor2 Laravel Project
+
+Ini adalah project Laravel yang menggunakan Tailwind CSS dan Vite untuk frontend. Jika kamu ingin berkontribusi atau menjalankan project ini di lokal, ikuti langkah-langkah berikut:
+
+------------------------------------
+
+## 🚀 Cara Menjalankan Project Ini
+
+### 1. Clone repository
+
+
+    git clone https://github.com/usernamekamu/retailmor2.git
+    cd retailmor2
+
+### 2. Install dependensi PHP (Laravel)
+    Pastikan sudah install Composer, lalu jalankan:
+
+    composer install
+
+### 3. Install dependensi Node.js (Vite + Tailwind)
+    Pastikan sudah install Node.js dan npm, lalu:
+
+    npm install
+
+
+### 4. Buat file .env
+    Salin file .env.example menjadi .env:
+
+    cp .env.example .env
+
+
+### 5. Generate application key
+
+    php artisan key:generate
+
+
+### 6. Atur konfigurasi database
+    Edit file .env dan sesuaikan bagian ini dengan konfigurasi lokal kamu:
+
+    makefile
+
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=nama_database_kamu
+    DB_USERNAME=root
+    DB_PASSWORD=
+    Lalu jalankan migrasi database jika diperlukan:
+    php artisan migrate
+
+
+CARA MENJALANKAN APLIKASI
+
+### 7. Jalankan build frontend
+    npm run dev
+    Gunakan npm run build untuk build production
+
+### 8. Jalankan server Laravel
+
+    php artisan serve
+
+    📁 Struktur Penting
+    resources/views → file blade templates
+
+    resources/css → file CSS utama (app.css)
+
+    tailwind.config.js → konfigurasi Tailwind
+
+    vite.config.js → konfigurasi Vite
+
+⚙️ Requirements
+Pastikan kamu sudah menginstall:
+
+PHP >= 8.x
+
+    Composer
+
+Node.js & npm
+
+    MySQL / MariaDB
