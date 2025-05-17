@@ -34,7 +34,13 @@
     <div>
       <label class="block font-medium mb-1">Penjualan Biosolar</label>
       <input type="number" name="jual_biosolar" class="w-full border rounded px-3 py-2">
+    <div>
+      <label class="block font-medium mb-1">Penjualan Biosolar</label>
+      <input type="number" name="jual_biosolar" class="w-full border rounded px-3 py-2">
     </div>
+    <div>
+      <label class="block font-medium mb-1">Tera Biosolar</label>
+      <input type="number" name="tera_biosolar" class="w-full border rounded px-3 py-2">
     <div>
       <label class="block font-medium mb-1">Tera Biosolar</label>
       <input type="number" name="tera_biosolar" class="w-full border rounded px-3 py-2">
