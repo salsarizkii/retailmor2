@@ -15,6 +15,15 @@
     <div>
       <label class="block font-medium mb-1">No. SPBU</label>
       <input type="text" name="no_spbu" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300">
+</head>
+<body>
+    <form class="p-6 bg-white rounded-lg shadow-md space-y-4 max-w-screen-xl mx-auto">
+  <h2 class="text-2xl font-bold mb-4">Input Data SPBU</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div>
+      <label class="block font-medium mb-1">No. SPBU</label>
+      <input type="text" name="no_spbu" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300">
     </div>
 
     <!-- Biosolar -->
