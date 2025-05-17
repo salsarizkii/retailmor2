@@ -34,63 +34,39 @@
     <div>
       <label class="block font-medium mb-1">Penjualan Biosolar</label>
       <input type="number" name="jual_biosolar" class="w-full border rounded px-3 py-2">
-    <div>
-      <label class="block font-medium mb-1">Penjualan Biosolar</label>
-      <input type="number" name="jual_biosolar" class="w-full border rounded px-3 py-2">
     </div>
     <div>
       <label class="block font-medium mb-1">Tera Biosolar</label>
       <input type="number" name="tera_biosolar" class="w-full border rounded px-3 py-2">
-    <div>
-      <label class="block font-medium mb-1">Tera Biosolar</label>
-      <input type="number" name="tera_biosolar" class="w-full border rounded px-3 py-2">
     </div>
-  </nav>
-  
-</header>
 
-    {{-- DROPDOWN --}}
-    <div class="form-container m-30">
-      <div class="my-5">
-        <h2 class="text-base/7 font-semibold text-gray-900">Personal Information</h2>
-        <p class="mt-1 text-sm/6 text-gray-600">Use a permanent address where you can receive mail.</p>
-      </div>
-      <form>
-      <div class="sm:col-span-3">
-        <label for="country" class="block text-sm/6 font-medium text-gray-900">Provinsi</label>
-        <div class="mt-2 grid grid-cols-1">
-          <select id="country" name="country" autocomplete="country-name" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
-            <option>Bengkulu</option>
-            <option>Jambi</option>
-            <option>Kep. Bangka Belitung</option>
-            <option>Lampung</option>
-            <option>Sumatera Selatan</option>
-          </select>
-          <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
-            <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-          </svg>
-        </div>
+    <!-- Pertalite -->
+    <div>
+      <label class="block font-medium mb-1">Stok Akhir Pertalite</label>
+      <input type="number" name="stok_pertalite" class="w-full border rounded px-3 py-2">
+    </div>
+    <div>
+      <label class="block font-medium mb-1">Penjualan Pertalite</label>
+      <input type="number" name="jual_pertalite" class="w-full border rounded px-3 py-2">
+    </div>
+    <div>
+      <label class="block font-medium mb-1">Tera Pertalite</label>
+      <input type="number" name="tera_pertalite" class="w-full border rounded px-3 py-2">
+    </div>
 
-        <label for="country" class="block text-sm/6 font-medium text-gray-900">Kota</label>
-        <div class="mt-2 grid grid-cols-1">
-          <select id="country" name="country" autocomplete="country-name" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
-            <option>Kab. Bengkulu Selatan</option>
-            <option>Canada</option>
-            <option>Mexico</option>
-          </select>
-          <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
-            <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-          </svg>
-        </div>
-      </div>
-
-      <div class="columns-3 my-4">
-        <div class="sm:col-span-3">
-          <label for="first-name" class="block text-sm/6 font-medium text-gray-900">First name</label>
-          <div class="mt-2">
-            <input type="number" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
-          </div>
-        </div>
+    <!-- Pertamax Turbo -->
+    <div>
+      <label class="block font-medium mb-1">Stok Akhir Pertamax Turbo</label>
+      <input type="number" name="stok_pturbo" class="w-full border rounded px-3 py-2">
+    </div>
+    <div>
+      <label class="block font-medium mb-1">Penjualan Pertamax Turbo</label>
+      <input type="number" name="jual_pturbo" class="w-full border rounded px-3 py-2">
+    </div>
+    <div>
+      <label class="block font-medium mb-1">Tera Pertamax Turbo</label>
+      <input type="number" name="tera_pturbo" class="w-full border rounded px-3 py-2">
+    </div>
 
     <!-- Pertamax -->
     <div>
