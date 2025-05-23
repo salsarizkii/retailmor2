@@ -12,20 +12,20 @@
   </head>
   <body>
     {{-- Navbar --}}
-    <nav class="w-full py-[12px] md:py-[50px] gap-[10px] bg-grey-100  text-black flex flex-wrap items-center justify-between px-[50px] md:px-[100px] ">
+    <nav class="fixed top-0 left-0 z-50 w-full py-[12px] md:py-[50px] gap-[10px] bg-white text-black flex flex-wrap items-center justify-between px-[50px] md:px-[100px]">
         <img src="{{ asset('images/Pertamina_Logo.svg') }}" alt="Logo" class="h-[20px] md:h-[40px]">
         <div class="flex row gap-4 flex-wrap items-center">
 
             {{-- Progress card --}}
             <div class="px-[10px] rounded-[23px] border-biru border-2 p-1 flex justify-evenly items-center bg-biru-100">
-                <i class="fa-solid fa-location-dot text-biru mr-[3px]"></i>
-                <span class="text-biru font-assistant text-[9px] sm:text-[12px]">location</span>
+                <i class="fa-solid fa-location-dot text-biru mr-[5px]"></i>
+                <span class="text-biru font-assistant text-[9px] sm:text-[12px]">Location</span>
             </div>
             {{-- arrow --}}
             <img src="{{asset('icons/arrow.svg')}}" alt="arah progress">
             {{-- Progress card --}}
             <div class="px-[10px] rounded-[23px] border-grey border-2 p-1 flex justify-evenly items-center bg-biru-secondary">
-                <span class="text-secondary font-assistant text-[9px] sm:text-[15px]">Biosolar</span>
+                <span class="text-secondary font-assistant text-[9px] sm:text-[12px]">Biosolar</span>
             </div>
             {{-- arrow --}}
             <img src="{{asset('icons/arrow.svg')}}" alt="arah progress">
@@ -57,26 +57,77 @@
             <div class="px-[10px] rounded-[23px] border-grey border-2 p-1 flex justify-evenly items-center bg-biru-secondary">
                 <span class="text-secondary font-assistant text-[9px] sm:text-[12px]">Dexlite</span>
             </div>
+
         </div>
     </nav>
     
-    <div class="mt-[50px] px-[50px] md:px-[75px] lg:px-[100px]">
+    <div class="mt-[142px] md:mt-[190px] px-[50px] md:px-[75px] lg:px-[100px] mb-[10000px]">
         {{-- judul --}}
         <div class="judul">
-            <h1 class="text-left text-[30px] md:text-[40px] font-bold font-assistant text-hitam">Pelaporan Stok Akhir Bulan</h1>
-            <p class="text-left text-[15px] md:text-[18px] font-assistant font-medium text-secondary">Silakan isi laporan stok BBM per akhir bulan untuk keperluan rekap dan pemantauan distribusi</p> 
+            <h1 class="text-left text-[15px] md:text-[25px] font-bold font-assistant text-hitam">Pelaporan Stok Akhir Bulan</h1>
+            <p class="text-left text-[10px] md:text-[15px] font-assistant font-medium text-secondary">Lengkapi informasi lokasi SPBU Anda untuk memastikan data pelaporan sesuai wilayah operasional.</p> 
         </div>
         {{-- separator --}}
         <hr class="border-t border-gray-300 my-[55px]" style="border-width: 0.5px;">
         {{-- lokasi spbu --}}
         <div class="lokasi spbu">
-            <h1 class="text-left text-[30px] md:text-[40px] font-bold font-assistant text-hitam">Pelaporan Stok Akhir Bulan</h1>
-            <p class="text-left text-[15px] md:text-[18px] font-assistant font-medium text-secondary">Silakan isi laporan stok BBM per akhir bulan untuk keperluan rekap dan pemantauan distribusi</p> 
+            <h1 class="text-left text-[15px] md:text-[25px] font-bold font-assistant text-hitam">Lokasi SPBU</h1>
+            <p class="text-left text-[10px] md:text-[15px] font-assistant font-medium text-secondary">Silakan isi laporan stok BBM per akhir bulan untuk keperluan rekap dan pemantauan distribusi</p> 
         </div>
+        {{-- form --}}
+        <form>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-3 sm:gap-x-6 gap-y-3 sm:gap-y-5 md:gap-y-8">
+                {{-- Provinsi --}}
+                <div>
+                    <label for="provinsi" class="block text-sm font-medium text-gray-900">Provinsi</label>
+                    <div class="mt-2 relative">
+                        <select id="provinsi" name="provinsi" autocomplete="address-level1" class="w-full text-[10px] sm:text-[16px] appearance-none rounded-md bg-white py-1.25 sm:py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-biru">
+                            <option>Pilih Provinsi</option>
+                            <option>Jawa Barat</option>
+                            <option>Jawa Tengah</option>
+                            <option>Jawa Timur</option>
+                        </select>
+                        <svg class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 size-5 text-gray-500" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                {{-- Kota --}}
+                <div>
+                    <label for="kota" class="block text-sm font-medium text-gray-900">Kota</label>
+                    <div class="mt-2 relative">
+                        <select id="kota" name="kota" autocomplete="address-level2" class="w-full text-[10px] sm:text-[16px] appearance-none rounded-md bg-white py-1.25 sm:py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:biru">
+                            <option>Pilih Kota</option>
+                            <option>Bandung</option>
+                            <option>Semarang</option>
+                            <option>Surabaya</option>
+                        </select>
+                        <svg class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 size-5 text-gray-500" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                {{-- NO. SPBU --}}
+                <div>
+                    <label for="no_spbu" class="block text-sm font-medium text-gray-900">No. SPBU</label>
+                    <div class="mt-2 relative">
+                        <select id="no_spbu" name="no_spbu" class="w-full text-[10px] sm:text-[16px] appearance-none rounded-md bg-white py-1.25 sm:py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:biru">
+                            <option>Pilih No. SPBU</option>
+                            <option>34.123.45</option>
+                            <option>34.678.90</option>
+                        </select>
+                        <svg class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 size-5 text-gray-500" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </form>
+
     </div>
 
-    <div class="m-40">
-        {{-- <form>
+    {{-- <div class="m-40">
+        <form>
             <div class="space-y-12">
                 <div class="border-b border-gray-900/10 pb-12">
                 <h2 class="text-base/7 font-semibold text-gray-900">Profile</h2>
@@ -88,7 +139,7 @@
                     <div class="mt-2">
                         <div class="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
                         <div class="shrink-0 text-base text-gray-500 select-none sm:text-sm/6">workcation.com/</div>
-                        <input type="text" name="username" id="username" class="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6" placeholder="janesmith">
+                        <input type="text" name="username" id="username" class="block min-w-0 grow py-0.5 sm:py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6" placeholder="janesmith">
                         </div>
                     </div>
                     </div>
@@ -119,7 +170,7 @@
                             <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd" />
                         </svg>
                         <div class="mt-4 flex text-sm/6 text-gray-600">
-                            <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 focus-within:outline-hidden hover:text-indigo-500">
+                            <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:ring-2 focus-within:biru focus-within:ring-offset-2 focus-within:outline-hidden hover:text-indigo-500">
                             <span>Upload a file</span>
                             <input id="file-upload" name="file-upload" type="file" class="sr-only">
                             </label>
@@ -284,8 +335,9 @@
                 <button type="button" class="text-sm/6 font-semibold text-gray-900">Cancel</button>
                 <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
             </div>
-        </form> --}}
+        </form>
 
-    </div>
+    </div> --}}
 
   </body>
+</html>
